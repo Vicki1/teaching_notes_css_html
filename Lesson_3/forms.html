@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+    </head>
+    <body>
+
+        <form>
+            <!-- fieldset tags add the border-->
+            <fieldset>
+                <!--legend tag makes title that cuts into border to tell you what the form is about-->
+                <legend>Profile Info</legend> 
+
+                Name: <input type="text" placeholder="Your Full Name Here"><br>
+                Email: <input type="email" placeholder="your@email.com"><br>
+                Password: <input type="password"><br> <!--putting type as password will automatically make it show at dots-->
+
+                <br><br>
+                Gender:<br>
+                <input type="radio" name="gender"> Male<br> 
+                <!--when doing a radio type, if you give two inputs with radio type the same name value, i.e. "gender"
+                , only one radio input with the name value "gender" will be selectable at one time, and it will toggle between the choices-->
+                <input type="radio" name="gender"> Female<br>
+
+                <br><br>
+
+                Type of computer:<br>
+                <input type="checkbox"> I have a laptop<br>
+                <input type="checkbox"> I have a desktop
+
+                <br><br>
+                
+                Age<br>
+                <select>
+                    <option>0 - 20</option>
+                    <option>20 - 40</option>
+                    <option>40+</option>
+                </select>
+
+                <br><br>
+
+                Biography<br>
+                <textarea cols="30" rows="3"></textarea><!--normally us CSS to achieve look but for now we are using straight HTML-->
+
+                <br><br>
+
+                <input type="submit" value="Save my info">
+                <input type="reset" value="Clear form">
+                
+             </fieldset>
+        </form>
+
+    </body>
+</html>
